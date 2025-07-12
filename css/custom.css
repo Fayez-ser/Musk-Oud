@@ -1,0 +1,230 @@
+/*
+primary-color: #edc531;
+secondary-color: #5c2e0a;
+
+inter 
+roboto
+Amatic SC
+
+
+
+*/
+
+:root {
+
+    --bs-primary: #7A542E;
+    --bs-secondary-color: #e4d00a;
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Amatic SC", sans-serif;
+    --nav-font: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--default-font);
+    height: 10000px;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary-color) !important;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary-color);
+}
+
+.text-light-emphasis {
+    color: #fff;
+}
+
+.nav-link {
+    font-family: var(--nav-font);
+}
+
+.blend-mode {
+    background-color: #86592C;
+    background-blend-mode: color;
+}
+
+.blend-mode-forward {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: color;
+    bottom: 2px;
+    right: 2px;
+}
+
+.burger-icon {
+    color: var(--bs-secondary-color);
+}
+
+.navbar-toggler {
+    border-color: var(--bs-secondary-color);
+
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--bs-secondary-color);
+}
+
+.spicial-font {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: #fff !important;
+
+}
+
+#navbarNav ul li:not(.dropdown):before {
+    content: '';
+    position: absolute;
+    background-color: #DCA853;
+    height: 3px;
+    bottom: 0;
+    width: 0 ;
+    transition: width 0.3s ease-in-out;
+}
+
+#navbarNav ul li:hover::before {
+    width: 100%;
+    background-color: var(--bs-secondary-color);
+}
+
+/* #navbarNav ul li:hover {
+    background-color: var(--bs-secondary-color);
+} */
+
+@media (min-width: 992px) {
+    .spicial-font {
+        font-size: 4rem;
+
+    }
+}
+
+.hero {
+    height: 89vh;
+}
+
+.hero-image {
+    width: 100%;
+    height: 25rem;
+    border: 1px solid #e4ce0a6f;
+    box-shadow: 0px 0px 10px 0 #413b286e;
+    animation-name: glowing-circle;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.hero-content {
+    height: 95%;
+}
+
+.hero-btn-container {
+    bottom: 2%;
+}
+
+.hero-description {
+    max-width: 100%;
+}
+
+.hero-btn-container a:nth-child(1) {
+    translate: 40%;
+}
+
+.hero-btn-container a:nth-child(2) {
+    translate: 60%;
+}
+
+@media (min-width: 576px) {
+    .hero-btn-container {
+        bottom: initial;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-btn-container a:nth-child(1) {
+        translate: 0;
+    }
+
+    .hero-btn-container a:nth-child(2) {
+        translate: 0;
+    }
+}
+
+/* @media (min-width: 767px) {} */
+
+.btn.spicial-btn:hover {
+    background-color: rgba(228, 206, 10, .9);
+    box-shadow: 0px 0px 2px 1px #e4d00a;
+    border-color: transparent;
+}
+
+.video-btn:hover span {
+    color: #d11515;
+}
+
+@media (min-width: 768px) {
+
+    .hero-image {
+        width: 40vh !important;
+        height: 40vh !important;
+        border-radius: 50% !important;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hero-image {
+        width: 60vh !important;
+        height: 60vh !important;
+    }
+}
+
+@media(min-width: 992px) {
+    .hero-description {
+        width: 40%;
+    }
+
+    .hero-content {
+        height: auto;
+    }
+}
+
+
+@keyframes glowing-circle {
+    0% {
+        box-shadow: 0px 0px 10px 0 #e4d00a;
+
+        border-color: #e4ce0a6f;
+    }
+
+    25% {
+        box-shadow: 0px 0px 10px 2px #e4d00a;
+
+        border-color: #e4ce0a9c;
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px 4px #e4d00a;
+
+        border-color: #e4ce0abd;
+    }
+
+    75% {
+        box-shadow: 0px 0px 10px 6px #e4d00a;
+
+        border-color: #e4ce0add;
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 8px #e4d00a;
+
+        border-color: #e4d00a;
+    }
+}
