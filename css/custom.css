@@ -2,6 +2,8 @@
 primary-color: #edc531;
 secondary-color: #5c2e0a;
 
+#032830
+
 inter 
 roboto
 Amatic SC
@@ -13,6 +15,7 @@ Amatic SC
 :root {
 
     --bs-primary: #7A542E;
+    --primary-blend-mode: #926A42;
     --bs-secondary-color: rgb(228, 208, 10);
     --bs-info: #007a7a !important;
     --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -22,6 +25,7 @@ Amatic SC
     --bs-body-bg: transparent;
     --video-btn-color: #d11515;
     --bs-secondary-rgb : 228, 208, 10;
+
 }
 
 body {
@@ -246,8 +250,8 @@ body {
     text-shadow: -4px -5px 3px var(--bs-info);
 }
 
-.book-perfume {
-    background-color: #926A42;
+.bg-primary-blend-mode {
+    background-color: var(--primary-blend-mode);
 }
 
 .play-video::before {
@@ -272,4 +276,46 @@ body {
     left: 50%;
     top: 50%;
     translate: calc(-50% + 7.5px) -50%;
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    transition: backgrond-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.feature-icon:hover {
+    background-color: var(--bs-secondary-color);
+    color: white !important;
+}
+
+.feature-icon :hover {
+}
+
+/* .opacity-90 {
+    opacity: .9;
+}
+.opacity-80 {
+    opacity: .8;
+}
+.opacity-70 {
+    opacity: .7;
+} */
+
+.btn-learn {
+    background-color: var(--bs-info);
+    /* background-color: rgba(228, 208, 10, 0.1); */
+}
+
+.shadow-card {
+    box-shadow: 0 0 5px 1px var(--bs-secondary-color);
+}
+
+.resources-counters {
+    background-image: url(../images/counters-background.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
+    background-size: cover;
+    min-height: 500px;
 }
