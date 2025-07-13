@@ -13,15 +13,22 @@ Amatic SC
 :root {
 
     --bs-primary: #7A542E;
-    --bs-secondary-color: #e4d00a;
+    --bs-secondary-color: rgb(228, 208, 10);
+    --bs-info: #007a7a !important;
     --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Amatic SC", sans-serif;
     --nav-font: "Inter", sans-serif;
+    --bs-box-shadow-sm: 0 0.125rem 0.25rem var(--bs-info);
+    --bs-body-bg: transparent;
+    --video-btn-color: #d11515;
+    --bs-secondary-rgb : 228, 208, 10;
 }
 
 body {
     font-family: var(--default-font);
     height: 10000px;
+
+
 }
 
 .bg-primary {
@@ -34,6 +41,14 @@ body {
 
 .btn-secondary {
     background-color: var(--bs-secondary-color);
+}
+
+.text-info {
+    color: var(--bs-info) !important;
+}
+
+.border-info {
+    border-color: var(--bs-info) !important;
 }
 
 .text-light-emphasis {
@@ -75,9 +90,6 @@ body {
 
 .spicial-font {
     font-family: var(--heading-font);
-    font-weight: 700;
-    color: #fff !important;
-
 }
 
 #navbarNav ul li:not(.dropdown):before {
@@ -86,7 +98,7 @@ body {
     background-color: #DCA853;
     height: 3px;
     bottom: 0;
-    width: 0 ;
+    width: 0;
     transition: width 0.3s ease-in-out;
 }
 
@@ -95,9 +107,7 @@ body {
     background-color: var(--bs-secondary-color);
 }
 
-/* #navbarNav ul li:hover {
-    background-color: var(--bs-secondary-color);
-} */
+.nav-shadow {}
 
 @media (min-width: 992px) {
     .spicial-font {
@@ -157,7 +167,6 @@ body {
     }
 }
 
-/* @media (min-width: 767px) {} */
 
 .btn.spicial-btn:hover {
     background-color: rgba(228, 206, 10, .9);
@@ -166,7 +175,7 @@ body {
 }
 
 .video-btn:hover span {
-    color: #d11515;
+    color: var(--video-btn-color);
 }
 
 @media (min-width: 768px) {
@@ -227,4 +236,40 @@ body {
 
         border-color: #e4d00a;
     }
+}
+
+.chk-mark-color {
+    color: var(--bs-info);
+}
+
+.text-shadow {
+    text-shadow: -4px -5px 3px var(--bs-info);
+}
+
+.book-perfume {
+    background-color: #926A42;
+}
+
+.play-video::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: var(--video-btn-color);
+    opacity: .7;
+}
+
+.play-video::after {
+    content: '';
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: calc(-50% + 7.5px) -50%;
 }
