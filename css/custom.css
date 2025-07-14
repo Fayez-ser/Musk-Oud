@@ -9,12 +9,19 @@ roboto
 Amatic SC
 
 
+24c Fresh Spicy • Citrus • Aromatic
+asad black Amber • Fresh Spicy • Vanilla
+asad brown Vanilla • Cacao • Aromatic
+ekhtyari White Floral • Fruity • Citrus
+maher Powdery • Woody • Vanilla
+
 
 */
 
 :root {
 
-    --bs-primary: #7A542E;
+    --bs-primary: rgb(122, 84, 46);
+    --bs-primary-rgb: 122, 84, 46;
     --primary-blend-mode: #926A42;
     --bs-secondary-color: rgb(228, 208, 10);
     --bs-info: #007a7a !important;
@@ -24,7 +31,9 @@ Amatic SC
     --bs-box-shadow-sm: 0 0.125rem 0.25rem var(--bs-info);
     --bs-body-bg: transparent;
     --video-btn-color: #d11515;
-    --bs-secondary-rgb : 228, 208, 10;
+    --bs-secondary-rgb: 228, 208, 10;
+    --bs-link-color: #fff;
+    --bs-link-hover-color: #0a58ca;
 
 }
 
@@ -271,7 +280,7 @@ body {
     content: '';
     border-width: 15px;
     border-style: solid;
-    border-color: transparent transparent transparent #fff ;
+    border-color: transparent transparent transparent #fff;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -290,8 +299,7 @@ body {
     color: white !important;
 }
 
-.feature-icon :hover {
-}
+.feature-icon :hover {}
 
 /* .opacity-90 {
     opacity: .9;
@@ -318,4 +326,63 @@ body {
     background-blend-mode: color;
     background-size: cover;
     min-height: 500px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--bs-link-color);
+}
+
+.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover {
+    border-bottom-color: var(--bs-secondary-color);
+}
+
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem transparent;
+}
+
+/* .nav-link:focus, .nav-link:hover {
+    color: var(--bs-secondary-color);
+} */
+
+.testmionials-card {
+    width: 100%
+}
+
+@media (min-width: 992px) {
+    .testmionials-card {
+        width: 50%;
+    }
+}
+
+.events-card {
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 350px;
+
+}
+
+.event-1 {
+    background-image: url(../images/events-background/saudi-itenational-background.jpg);
+
+}
+
+.event-2 {
+    background-image: url(../images/events-background/fragrances-shrjah-expo.jpg);
+
+}
+
+.event-3 {
+    background-image: url(../images/events-background/ryead-expo-1.jpg);
+
+}
+
+.event-4 {
+    background-image: url(../images/events-background/dior-expo.jpg);
+
 }
