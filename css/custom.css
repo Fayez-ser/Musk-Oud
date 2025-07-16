@@ -417,5 +417,12 @@ body {
     transform: translateZ(100px);
 }
 
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight: 700;
+    color: white;
+    border-bottom-color: var(--bs-secondary-color);
+    
+}
+
 
  
