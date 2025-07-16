@@ -205,10 +205,8 @@ body {
         width: 60vh !important;
         height: 60vh !important;
     }
-}
 
-@media(min-width: 992px) {
-    .hero-description {
+        .hero-description {
         width: 40%;
     }
 
@@ -216,6 +214,7 @@ body {
         height: auto;
     }
 }
+
 
 
 @keyframes glowing-circle {
@@ -298,21 +297,9 @@ body {
     color: white !important;
 }
 
-.feature-icon :hover {}
-
-/* .opacity-90 {
-    opacity: .9;
-}
-.opacity-80 {
-    opacity: .8;
-}
-.opacity-70 {
-    opacity: .7;
-} */
 
 .btn-learn {
     background-color: var(--bs-info);
-    /* background-color: rgba(228, 208, 10, 0.1); */
 }
 
 .shadow-card {
@@ -323,6 +310,7 @@ body {
     background-image: url(../images/counters-background.jpg);
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: color;
+    background-position-x: center;
     background-size: cover;
     min-height: 500px;
 }
@@ -341,10 +329,6 @@ body {
     outline: 0;
     box-shadow: 0 0 0 .25rem transparent;
 }
-
-/* .nav-link:focus, .nav-link:hover {
-    color: var(--bs-secondary-color);
-} */
 
 .testmionials-card {
     width: 100%
@@ -407,4 +391,31 @@ body {
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.wave-img {
+    margin-top: -20%;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.teams {
+
+    perspective: 1000px;
+    perspective-origin: center center;
+}
+
+.team-card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    
+}
+
+.team-card:hover {
+    transform: translateZ(100px);
+}
+
+
  

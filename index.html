@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/custom.css">
     <title>Musk</title>
@@ -34,47 +33,46 @@
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
                 <i class="fa-solid fa-bars fa-lg burger-icon"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item position-relative">
-                        <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active link-light" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item position-relative">
-                        <a class="nav-link link-light" href="#">Features</a>
+                        <a class="nav-link link-light" href="#about">About</a>
                     </li>
                     <li class="nav-item position-relative ">
-                        <a class="nav-link link-light" href="#">Pricing</a>
+                        <a class="nav-link link-light" href="#menu">Menu</a>
                     </li>
                     <li class="nav-item position-relative ">
-                        <a class="nav-link link-light">Disabled</a>
+                        <a class="nav-link link-light" href="#events">Events</a>
                     </li>
                     <li class="nav-item position-relative ">
-                        <a class="nav-link link-light">Disabled</a>
+                        <a class="nav-link link-light" href="#teams">Teams</a>
                     </li>
                     <li class="nav-item position-relative ">
-                        <a class="nav-link link-light">Disabled</a>
+                        <a class="nav-link link-light" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle link-light" href="#" id="navbarDropdownMenuLink"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
+                            Our Prands
                         </a>
                         <ul class="dropdown-menu link-light" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item link-light" href="#">Action</a></li>
-                            <li><a class="dropdown-item link-light" href="#">Another action</a></li>
-                            <li><a class="dropdown-item link-light" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item link-light" href="#">ARMAF</a></li>
+                            <li><a class="dropdown-item link-light" href="#">EMBER</a></li>
+                            <li><a class="dropdown-item link-light" href="#">LATTAFA</a></li>
                         </ul>
                     </li>
                     <li class="nav-item position-relative ">
-                        <a class="nav-link link-light">Disabled</a>
+                        <a class="nav-link link-light" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
 
-            <a href="#" role="button"
+            <a href="#book" role="button"
                 class="btn btn-md spicial-btn rounded-pill btn-secondary fw-medium d-none d-xl-block">Book
                 your perfume</a>
 
@@ -82,7 +80,7 @@
     </nav>
 
 
-    <section class="hero blend-mode text-dark  p-lg-5 text-center text-lg-start position-relative">
+    <section class="hero blend-mode text-dark text-center text-lg-start position-relative " id="home">
         <div class="blend-mode-forward position-absolute "></div>
         <div class="container-xxl  d-flex align-items-center  justify-content-sm-start h-100">
             <div
@@ -90,17 +88,36 @@
 
                 <div class="hero-description">
                     <h1 class="text-primary spicial-font fw-bold text-white ">Enjoy Your Fragrant Perfume</h1>
-                    <p class="lead my-4" style="color: #e4d00a;">
+                    <p class="lead my-4 text-secondary">
                         We are team of talented designers making websites with Bootstrap
                     </p>
                     <div class="hero-btn-container  z-3 position-absolute  mx-auto mx-0-lg">
-                        <a href="#" role="button"
+                        <a href="#book" role="button"
                             class=" btn btn-md spicial-btn rounded-pill btn-secondary fw-medium d-sm-inline-block d-none">Book
                             your perfume</a>
                         <a href="#" role="button" class=" btn btn-lg video-btn fw-medium d-sm-inline-block d-none"><i
-                                class="fa-regular fa-circle-play fa-xl" style="color: #d11515;"></i>
+                                class="fa-regular fa-circle-play fa-xl" style="color: #d11515;" data-bs-toggle="modal"
+                                data-bs-target="#videoModal"></i>
                             <span class="text-white">Watch Video</span>
                         </a>
+
+                        <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content bg-dark border-0">
+                                    <div class="modal-body p-0">
+                                        <div class="ratio ratio-16x9">
+                                            allowfullscreen></iframe>
+                                            <iframe width="560" height="315" src="" id="videoIframe"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <img class="hero-image img-fluid rounded-0" src="./images/spray-gif-3.gif" alt="Hero Image">
@@ -109,24 +126,24 @@
         </div>
     </section>
 
-    <section class="about-us py-5 bg-primary ">
+    <section class="about-us py-5 bg-primary px-3 px-sm-4 px-lg-0" id="about">
         <h2 class="text-center text-info fs-6 fw-normal ">About Us</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">Learn More
             </span>About Us</p>
 
-        <div class="container-xxl text-center">
-            <div class="row">
-                <div class="col-12 col-lg-7">
+        <div class="container-xxl text-center p-0">
+            <div class="row g-5">
+                <div class="col-12 col-lg-7 ">
                     <img class="img-fluid mb-4 shadow-sm rounded" src="./images/my-store-2.webp" alt="">
-                    <div class="bg-primary-blend-mode p-2 p-lg-4">
-                        <h3 class="fw-bold fs-4 text-white">Book Your Perfume</h3>
+                    <div class="bg-primary-blend-mode p-2 p-lg-2">
+                        <h3 class="fw-bold fs-4 text-white mt-3">Book Your Perfume</h3>
                         <p class="fw-medium fs-3 text-secondary ">00963 969 605 368</p>
                     </div>
                 </div>
 
                 <hr class="d-block d-lg-none">
 
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 px-3 px-sm-4 px-lg-0">
                     <h2 class="text-center text-info fs-6 fw-normal fst-italic mt-3 mt-lg-0">Our store in Damascus is
                         one of the
                         largest and most prestigious perfume retailers in the Middle East and the world, distinguished
@@ -174,10 +191,10 @@
         </div>
     </section>
 
-    <section class="our-features py-5 bg-primary-blend-mode px-3 px-0-lg">
+    <section class="our-features py-5 bg-primary-blend-mode px-3 px-sm-4 px-lg-0 ">
         <div class="container-xxl ">
-            <div class="row gap-4">
-                <div class="col-12 col-lg-4 px-4 pt-4 pb-3  bg-secondary text-white rounded-2">
+            <div class="row gap-4 ">
+                <div class="col-12 col-lg-4  pt-4 pb-3  bg-secondary text-white rounded-2 opacity-75">
                     <h3 class="fw-bold fs-2 mb-5">Why Choose Musk & Oud</h3>
                     <p class="mb-4">Because it takes into account the individual fragrance preferences of each customer,
                         and provides
@@ -195,7 +212,7 @@
                             class="btn-learn btn btn-lg border-0 rounded-pill text-white fw-medium">Learn More ></a>
                     </div>
                 </div>
-                <div class="col-12 col-lg px-3 pt-4 pb-3 text-center bg-white">
+                <div class="col-12 col-lg px-1 px-lg-0 pt-4 pb-3 text-center bg-white">
                     <div
                         class="feature-icon mx-auto  text-secondary d-flex justify-content-center align-items-center rounded-circle">
                         <i class="fa-regular fa-paste fa-2xl"></i>
@@ -206,7 +223,7 @@
 
                     </p>
                 </div>
-                <div class="col-12 col-lg px-3 pt-4 pb-3 text-center shadow-card bg-white rounded-2">
+                <div class="col-12 col-lg px-0 px-lg-3 pt-4 pb-3 text-center bg-white rounded-2">
                     <div
                         class="feature-icon mx-auto  text-secondary d-flex justify-content-center align-items-center rounded-circle">
                         <i class="fa-regular fa-paste fa-2xl"></i>
@@ -217,7 +234,7 @@
 
                     </p>
                 </div>
-                <div class="col-12 col-lg px-3 pt-4 pb-3 text-center bg-white">
+                <div class="col-12 col-lg px-0 px-lg-3 pt-4 pb-3 text-center bg-white">
                     <div
                         class="feature-icon mx-auto  text-secondary d-flex justify-content-center align-items-center rounded-circle">
                         <i class="fa-regular fa-paste fa-2xl"></i>
@@ -263,7 +280,7 @@
 
     </section>
 
-    <section class="our-menu py-5 bg-primary">
+    <section class="our-menu py-5 bg-primary" id="menu">
         <h2 class="text-center text-info fs-6 fw-normal">OUR MENU</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">Check Our
             </span>M & O Menu</p>
@@ -489,15 +506,16 @@
         </div>
     </section>
 
-    <section class="testmonilas bg-primary-blend-mode py-5 px-4 px-0-lg">
+    <section class="testmonilas bg-primary-blend-mode py-5 px-3 px-sm-4 px-lg-0">
         <h2 class="text-center text-info fs-6 fw-normal">TESTIMONIALS</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">What Are
                 They
             </span>Saying About Us</p>
 
+            
 
         <div class="testmionials-card row align-items-center mx-auto border-start border-info border-4">
-            <div class="col-12 col-lg-9 customer-info">
+            <div class="col-12 col-sm-9 customer-info">
                 <p class="mb-2">
                     <i class="qoute-icon fa-solid fa-quote-left text-info opacity-50"></i>
                     <span class="fst-italic">I was honestly surprised by the quality! Musk & Oud offers imported
@@ -574,7 +592,7 @@
     <section class="events" id="events">
         <div class="row g-0">
 
-            <div class="event-1 events-card col-12 col-lg ps-5 pe-0">
+            <div class="event-1 events-card col-12 col-lg px-3 px-sm-4 ">
                 <h3 class="spicial-font fw-bold fs-4 text-white mb-1">The Saudi Health & Beauty Expo</h3>
                 <div class="mb-2">
                     <span class="text-secondary fs-1 mb-1 border-bottom border-info border-4">2023</span>
@@ -584,7 +602,7 @@
                 </p>
             </div>
 
-            <div class="event-2 events-card col-12 col-lg ps-5 pe-0">
+            <div class="event-2 events-card col-12 col-lg px-3 px-sm-4">
                 <h3 class="spicial-font fw-bold fs-4 text-white mb-1">Sharjah International Perfume Exhibition</h3>
                 <div class="mb-2">
                     <span class="text-secondary fs-1 mb-1 border-bottom border-info border-4">2024</span>
@@ -595,7 +613,7 @@
                 </p>
             </div>
 
-            <div class="event-3 events-card col-12 col-lg ps-5 pe-0">
+            <div class="event-3 events-card col-12 col-lg px-3 px-sm-4">
                 <h3 class="spicial-font fw-bold fs-4 text-white mb-1">Ryead International Perfume Exhibition</h3>
                 <div class="mb-2">
                     <span class="text-secondary fs-1 mb-1 border-bottom border-info border-4">2025</span>
@@ -606,7 +624,7 @@
                 </p>
             </div>
 
-            <div class="event-4 events-card col-12 col-lg ps-5 pe-0 d-none">
+            <div class="event-4 events-card col-12 col-lg px-3 px-sm-4 d-none">
                 <h3 class="spicial-font fw-bold fs-4 text-white mb-1">Dior Global Perfume Exhibition
                 </h3>
                 <div class="mb-2">
@@ -621,53 +639,64 @@
 
     </section>
 
-    <section class="our-team bg-primary py-5 px-4 px-0-lg">
+    <section class="our-team bg-primary py-5 px-4 px-lg-0" id="teams">
         <h2 class="text-center text-info fs-6 fw-normal">TEAMS</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">OUR
             </span>Proffesional TEAMS</p>
 
-        <div class="row gap-3 text-center">
+        <div class="container-xxl ">
 
-            <div class="card col-12 col-lg p-0 ">
-                <img src="./images/our-teams/sales-representitve-2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Walter White</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">sales representative</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                        of the card's content.</p>
+            <div class="row gap-4 text-center teams">
+
+                <div class="card team-card col-12 col-lg border-0 shadow-card p-0">
+                    <img src="./images/our-teams/sales-representitve-2.jpg" class="card-img-top img-fluid " alt="...">
+                    <img class="wave-img" src="./images/wave (1).svg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Walter White</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">sales representative</h6>
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up
+                            the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card team-card col-12 col-lg border-0 shadow-card p-0">
+                    <img src="./images/our-teams/public-relations-manager.avif" class="card-img-top img-fluid "
+                        alt="...">
+                    <img class="wave-img" src="./images/wave (1).svg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah Jhonson</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Public Relations Manager</h6>
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up
+                            the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card team-card col-12 col-lg border-0 shadow-card p-0">
+                    <img src="./images/our-teams/sales-manager.avif" class="card-img-top img-fluid " alt="...">
+                    <img class="wave-img" src="./images/wave (1).svg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">William Anderson</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Sales Manager</h6>
+                        <p class="card-text text-white">Some quick example text to build on the card title and make up
+                            the bulk
+                            of the card's content.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="card col-12 col-lg p-0">
-                <img src="./images/our-teams/public-relations-manager.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sarah Jhonson</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Public Relations Manager</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                        of the card's content.</p>
-                </div>
-            </div>
-
-            <div class="card col-12 col-lg p-0 ">
-                <img src="./images/our-teams/sales-manager.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">William Anderson</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Sales Manager</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                        of the card's content.</p>
-                </div>
-            </div>
         </div>
 
     </section>
 
-    <section class="book-perfume bg-primary-blend-mode py-5">
+    <section class="book-perfume bg-primary-blend-mode py-5" id="book">
         <h2 class="text-center text-info fs-6 fw-normal">BOOK YOUR PERFUME</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">Book Your
             </span>Stay With Us</p>
 
         <div class="container-xxl">
-            <div class="row g-0">
+            <div class="row g-0 opacity-50">
                 <div class="col-12 col-lg-4 p-0">
                     <img class="img-fluid w-100" src="./images/spray-1.jpg" alt="">
                 </div>
@@ -730,7 +759,7 @@
                         </div>
 
                         <div class="col-12 text-center">
-                            <a href="#" role="button"
+                            <a href="#book" role="button"
                                 class="btn btn-lg spicial-btn btn-secondary fw-medium d-inline-block">Book
                                 your perfume</a>
                         </div>
@@ -741,7 +770,7 @@
         </div>
     </section>
 
-    <section class="our-gallery bg-primary py-5">
+    <section class="our-gallery bg-primary py-5" id="gallery">
         <h2 class="text-center text-info fs-6 fw-normal">OUR GALLERY</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">Check
             </span>Our Gallery</p>
@@ -793,7 +822,7 @@
 
     </section>
 
-    <section class="contact bg-primary-blend-mode py-5">
+    <section class="contact bg-primary-blend-mode py-5" id="contact">
         <h2 class="text-center text-info fs-6 fw-normal">CONTACT</h2>
         <p class="text-center spicial-font fw-medium fs-1 text-secondary mt-1 mb-5"><span class="text-white">Need Help?
             </span>CONTACT US</p>
@@ -807,9 +836,9 @@
 
             <div class="row pt-4 pb-3  g-4">
 
-                <div class="col-12 col-lg-6 px-lg-4">
+                <div class="col-12 col-lg-6 px-lg-4 ">
 
-                    <div class="row bg-white ps-4 py-3 align-items-center">
+                    <div class="row bg-white ps-4 py-3 align-items-center shadow-card">
 
                         <div
                             class="col-2 feature-icon rounded-circle bg-info d-flex justify-content-center align-items-center ">
@@ -825,9 +854,9 @@
 
                 </div>
 
-                <div class="col-12 col-lg-6 px-lg-4">
+                <div class="col-12 col-lg-6 px-lg-4 ">
 
-                    <div class="row bg-white ps-4 py-3 align-items-center">
+                    <div class="row bg-white ps-4 py-3 align-items-center shadow-card">
 
                         <div
                             class="col-2 feature-icon rounded-circle bg-info d-flex justify-content-center align-items-center ">
@@ -843,9 +872,9 @@
 
                 </div>
 
-                <div class="col-12 col-lg-6 px-lg-4">
+                <div class="col-12 col-lg-6 px-lg-4 ">
 
-                    <div class="row bg-white ps-4 py-3 align-items-center">
+                    <div class="row bg-white ps-4 py-3 align-items-center shadow-card">
 
                         <div
                             class="col-2 feature-icon rounded-circle bg-info d-flex justify-content-center align-items-center ">
@@ -861,9 +890,9 @@
 
                 </div>
 
-                <div class="col-12 col-lg-6 px-lg-4">
+                <div class="col-12 col-lg-6 px-lg-4 ">
 
-                    <div class="row bg-white ps-4 py-3 align-items-center bg-white">
+                    <div class="row bg-white ps-4 py-3 align-items-center bg-white shadow-card">
 
                         <div
                             class="col-2 feature-icon rounded-circle bg-info d-flex justify-content-center align-items-center ">
@@ -880,7 +909,7 @@
                 </div>
             </div>
 
-            <form class="row g-4 mx-0 pb-4 my-4 bg-white ">
+            <form class="row g-4 mx-0 pb-4 my-4 bg-white shadow-card">
 
                 <div class="col-md-6">
                     <input type="text" class="form-control" placeholder="Your Name">
@@ -899,7 +928,8 @@
                 </div>
 
                 <div class="col-12 text-center">
-                    <a href="#" role="button" class="btn btn-lg spicial-btn btn-secondary fw-medium d-inline-block">Book
+                    <a href="#book" role="button"
+                        class="btn btn-lg spicial-btn btn-secondary fw-medium d-inline-block">Book
                         your perfume</a>
                 </div>
             </form>
@@ -911,39 +941,43 @@
             <div class="row text-white">
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h3 class="fw-bold fs-5 mb-2 mb-0"><i class="fa-solid fa-location-dot text-secondary fs-3"></i>
+                    <h3 class="fw-bold fs-5 mb-2 mb-0 text-primary"><i
+                            class="fa-solid fa-location-dot text-secondary fs-3"></i>
                         Address</h3>
                     <p class="ps-4">A108 Adam Street, New York, NY 535022</p>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h3 class="fw-bold fs-5 mb-2 mb-0"><i class="fa-solid fa-phone text-secondary fs-3"></i>
+                    <h3 class="fw-bold fs-5 mb-2 mb-0 text-primary"><i
+                            class="fa-solid fa-phone text-secondary fs-3"></i>
                         Contact</h3>
                     <p class="ps-4"><span class="fw-bold">Phone:</span>+963969605368</p>
                     <p class="ps-4"><span class="fw-bold">Email:</span>info@example.com</p>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h3 class="fw-bold fs-5 mb-2 mb-0"><i class="fa-solid fa-clock text-secondary fs-3"></i>
+                    <h3 class="fw-bold fs-5 mb-2 mb-0 text-primary"><i
+                            class="fa-solid fa-clock text-secondary fs-3"></i>
                         Opening Hours </h3>
                     <p class="ps-4">Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h3 class="fw-bold fs-5 mb-2 mb-0"><img src="./images/icons/follow-us.png" alt="">
-                        Address</h3>
+                    <h3 class="fw-bold fs-5 mb-2 mb-0 text-primary"><img src="./images/icons/follow-us.png" alt="">
+                        Follow Us</h3>
                     <p class="ps-4">
-                        <img src="./images/icons/telegram.png" alt="">
-                        <img src="./images/icons/facebook.png" alt="">
-                        <img src="./images/icons/linkedin.png" alt="">
-                        <img src="./images/icons/instagram.png" alt="">
+                        <img class="d-inline-block me-2" src="./images/icons/telegram.png" alt="">
+                        <img class="d-inline-block me-2" src="./images/icons/facebook.png" alt="">
+                        <img class="d-inline-block me-2" src="./images/icons/linkedin.png" alt="">
+                        <img class="d-inline-block " src="./images/icons/instagram.png" alt="">
                     </p>
                 </div>
 
             </div>
 
-            <div class="text-center text-white border-top border-1">
-                <p class="py-3">© <span>Copyright</span> <strong class="px-1">Yummy</strong> <span>All Rights Reserved</span></p>
+            <div class="text-center text-white border-top border-1 border-secondary">
+                <p class="py-3">© <span>Copyright</span> <strong class="px-1">Musk & Oud</strong> <span>All Rights
+                        Reserved</span></p>
             </div>
         </div>
     </section>
@@ -954,6 +988,7 @@
     <script src="./js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 
